@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSolutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <script src="https://kit.fontawesome.com/0a8ed659dc.js" crossorigin="anonymous"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+    <div class="container fluid">
+      <a class="navbar-brand" href="index.html"> <!-- Logotipo-->
+        <img src="static/img/Logofinal.png" alt="Logotipo--" width="100">
+      </a>
+      <button class="navbar-toggler align-content-end" 
+          style="color: rgb(0, 0, 0);"
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item px-3"><a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Inicio</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="login.html" style="color: black;">Ingresar</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="contactanos.html" style="color: black;">Contáctanos</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="about.html" style="color: black;">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+        <!--contact-->
+  <section id="contact" class="section-padding">
+    <div class="container fluid">
+      <div class="row py-5">
+        <div class="col-md-12">
+          <h2 class="ser-title"></h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h4>Información de contacto</h4>
+          <div class="space"></div>
+          <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Medellín-Antioquia<br>Colombia</p>
+          <div class="space"></div>
+          <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>biosolutions-support@gmail.com</p>
+          <div class="space"></div>
+          <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>3146328705</p>
+        </div>
+        <div class="col-md-8 col-sm-8 marb20 ">
+          <div class="contact-info">
+            <h3 class="cnt-ttl">¿Tienes alguna queja o reclamo?</h3>
+            <p class="">Para nosotros es un placer ayudarte, deja un mensaje con tu solicitud y pronto nos pondremos en contacto contigo.</p>
+            <div class="space"></div>
+            <div id="sendmessage">Su mensaje ha sido enviado. ¡Muchas gracias!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group pb-3">
+                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Nombre completo" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group pb-3">
+                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group pb-3">
+                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group pb-3">
+                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="form-action">
+                <button type="submit" class="btn btn-form">Enviar mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+  <footer>
+    <!--Links-->
+
+    <div id="pie-pagina">
+      <div class="container-fluid py-5">
+        <div class="row justify-content-center pb-5">
+          <div class="col-2 text-center"><a href="login.html" style="color: white;">Loguearse</a></div>
+          <div class="col-2 text-center"><a href="about.html" style="color: white;">Sobre nosotros</a></div>
+        </div>
+        
+        <div class="row justify-content-center pt-3">
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-f">
+                <a href="https://www.facebook.com/juancamilo.sanchezhincapie/"><i class="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-t">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-i">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-md-12">
+            <div class="copy-right-text text-center fw-bold text-white">
+              &copy; Copyright 2021, BioSolutions </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

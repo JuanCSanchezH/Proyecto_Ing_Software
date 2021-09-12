@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSolutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <script src="https://kit.fontawesome.com/0a8ed659dc.js" crossorigin="anonymous"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+    <div class="container fluid">
+      <a class="navbar-brand" href="index.html"> <!-- Logotipo-->
+        <img src="static/img/Logofinal.png" alt="Logotipo--" width="100">
+      </a>
+      <button class="navbar-toggler align-content-end" 
+          style="color: rgb(0, 0, 0);"
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item px-3"><a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Inicio</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="login.html" style="color: black;">Ingresar</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="contactanos.html" style="color: black;">Contáctanos</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="about.html" style="color: black;">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+    <!--cta 2-->
+  <section id="cta-2" class="section-padding">
+    <div class="container-fluid">
+        <!--card about-->
+        <div class="card py-5">
+          <div class="row py-5 align-content-center">
+            <div class="col-md">
+              <div class="card-body">
+                <img src="/static/img/about.png" alt="..." class="w-100">
+                <h1 class="card-title fw-bold pt-5 pb-3 text-center" style="text-align: justify;">Software y desarrollo web</h1>
+                <p class="card-text fs-4 " style="text-align: justify;">Soluciones en telemedicina e implementación de sistemas TIC en el área de la salud. Captura y monitoreo de signos vitales, gestión de información respectiva</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" row justify-content-center pt-5">
+        <div class="col text-center "></div>
+          <h2 class="section-title text-dark fw-bold " style="text-align:center;">«En pocas palabras<br> Sobre nosotros»</h2>
+        </div>
+        <div class="col text-center fs-5">
+          <p style="text-align: justify;">Somos una empresa dedicada a facilitar el acceso a la información en salud, con el fin de acercar una unión entre los pacientes y el personal salud, es por esto, que queremos que nuestras plataformas sean amigables con todo tipo de usuario, adicionalmente queremos aportar al avance del uso de tecnologías en salud a nivel nacional.</p>
+          <p class="text-right text-primary"><i class="fa fa-doctor">— Estamos siempre en pro del cuidado del paciente</i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cards-about">
+    <div class="container-md p-5">
+      <div class="row pb-5">
+        <div class="col-md">
+          <div class="card w-100 card-border mb-5 text-center" id="carta-about">
+            <img src="/static/img/mision.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Misión</h5>
+              <p class="card-text" style="text-align: justify;">Lograr que la integración de tecnologías de monitoreo de variables vitales, se convierta en una facilidad para que el personal salud tenga la capacidad de manejar la información de los pacientes a distancia, generando un avance en materia de salud a nacional incorporando nuevas tecnologías que permiten llegar a lugares complicados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card w-100 card-border mb-5 text-center" id="carta-about">
+            <img src="/static/img/vision.png" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Visión</h5>
+              <p class="card-text" style="text-align: justify;">Ser una plataforma que afiance la relación con los pacientes y sea de gran utilidad en personal en salud, creando así un espacio que permite un acceso a la salud, además de ofrecer la posibilidad de recibir atención médica de forma oportuna, conociendo el estado con anticipación de los pacientes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card w-100 card-border mb-5 text-center" id="carta-about">
+            <img src="/static/img/valores.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Valores</h5>
+              <p class="card-text" style="text-align: justify;">Somos una empresa transparente y honesta, buscando adaptarnos a las necesidades del sector, atendiendo las solicitudes con diligencia, ofreciendo la mayor excelencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--cta-->
+  <footer>
+    <!--Links-->
+
+    <div id="pie-pagina">
+      <div class="container-fluid py-5">
+        <div class="row pb-5">
+          <div class="col-3"></div>
+          <div class="col-sm text-center"><a href="login.html" style="color: white;">Loguearse</a></div>
+          <div class="col-sm text-center"><a href="contactanos.html" style="color: white;">Contáctanos</a></div>
+          <div class="col-3"></div>
+        </div>
+        
+        <div class="row justify-content-center pt-3">
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-f">
+                <a href="https://www.facebook.com/juancamilo.sanchezhincapie/"><i class="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-t">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 text-center"><a href="#"></a>
+            <div class="service-info">
+              <div class="social-icon-i">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-md-12">
+            <div class="copy-right-text text-center fw-bold text-white">
+              &copy; Copyright 2021, BioSolutions </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

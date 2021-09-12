@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biosolutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <script src="https://kit.fontawesome.com/0a8ed659dc.js" crossorigin="anonymous"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{static/css/index.css}">
+
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-white">
+    <div class="container fluid">
+      <a class="navbar-brand" href="index.html"> <!-- Logotipo-->
+        <img src="static/img/Logofinal.png" alt="Logotipo--" width="100">
+      </a>
+      <button class="navbar-toggler align-content-end" 
+          style="color: rgb(0, 0, 0);"
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item px-3"><a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Inicio</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="login.html" style="color: black;">Ingresar</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="contactanos.html" style="color: black;">Contáctanos</a></li>
+          <li class="nav-item px-3"><a class="nav-link" href="about.html" style="color: black;">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<body>
+<!--Carousel-->
+  <div class="container-fluid">
+    <div class="col">
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/img/background.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-md-block">
+              <h1 class="fs-1 fw-bold">BioSolutions</h1>
+              <p class="fs-5 fw-bold">Plataforma y aplicación web.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/Telemedicina.jpg" class="d-block w-100" alt="..."> 
+            <div class="carousel-caption d-md-block">
+              <h1 class="fs-1 fw-bold">Brindamos</h1>
+              <p class="fs-5 fw-bold">Soluciones en telemedicina.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/zyro-image.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block text-center">
+              <h1 class="fs-1 fw-bold">Apoyamos</h1>
+              <p class="fs-5 fw-bold">Una gestión de información eficiente.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!--separador ribbon-->
+
+  <div id="separator">
+    <div class="content bg-white"></div>
+  </div>
+
+<!--ribbon-->
+
+  <div id="ribbon" class="container-fluid">
+    <div id="texto-ribbon" class="container pl-5">
+      <div class="row align-items-center">
+        <div class="col-md p-3 text-black text-center">
+          <h1 class="fs-3 fw-bold">Telemedicina al alcance de todos</h1>
+          <p class="fs-5">Gestionar reportes y analizar variables fisiológicas, nunca había sido tan sencillo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--separador ribbon-->
+
+  <div id="separator">
+    <div class="content bg-white"></div>
+  </div>
+
+<!--Titulo-->
+
+  <div id="title">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="/static/img/Captura.PNG" class="img-fluid" style="width: 1500px;" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="text-center pb-5 pt-5 h1 fw-bold">Nuestros servicios</h3>
+      </div>
+    </div>
+  </div>
+
+<!--Cards-->
+
+  <div id="cards">
+    <div class="container-md p-5">
+      <div class="row pb-5">
+        <div class="col-sm">
+          <div class="card w-100 card-border mb-5 text-center" id="carta">
+            <img src="/static/img/reloj-inteligente.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Obtención</h5>
+              <p class="card-text" style="text-align: justify;">Sistema de obtención de datos mediante una tecnología nueva y segura, capaz de medir signos vitales como frecuencia cardiaca y saturación de oxígeno.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card w-100 card-border mb-5 text-center" id="carta">
+            <img src="/static/img/aplicacion-celular.PNG" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Almacenamiento</h5>
+              <p class="card-text" style="text-align: justify;">La gestión y almacenamiento de datos es posible gracias a la intervención de un servidor interno con el software de aplicación móvil y con esta aplicación web.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card w-100 card-border mb-5 text-center" id="carta">
+            <img src="/static/img/archivos.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Administración</h5>
+              <p class="card-text" style="text-align: justify;">La manipulación de los datos en el servidor, permite obtener las mediciones concretas de cada paciente, facilita su visualización mediante gráficas y generar reportes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5">
+        <h3 class="text-center fw-bold fs-2" style="color: var(--bs-black)">Implementación de nuevas tecnologías</h3>
+      </div>
+      <div class="row align-content-center">
+        <div class="card-group">
+          <div class="card">
+            <img src="/static/img/amazfitband5.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bolder">Amazfit Band 5</h5>
+              <p class="card-text">Banda a color HD, con Resistencia al agua, con Amazfit OS, sensores de frecuencia cardíaca y medidor de oxígeno en sangre, batería de 25 días en modo ahorro, compatibilidad con Ios y Android.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/static/img/plataforma-medica.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bolder">Plataformas de gestión de información</h5>
+              <p class="card-text">A través de interfaces sencillas, se pueden solicitar datos de variables monitoreadas en los pacientes, esta información disponible para personal salud capacitado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--separator service-->
+  <div id="separator-service"> 
+    <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col py-5">
+          <div class="content">
+            <h1 class="text-center text-white">Además brindamos</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--card trazabilidad-->
+  <div class="card mb-2">
+    <div class="row py-5 px-5 align-content-end">
+      <div class="col-md-6">
+        <img src="/static/img/trazabilidad.PNG" alt="..." class="w-100">
+      </div>
+      <div class="col-md-5">
+        <div class="card-body p-5">
+          <h2 class="card-title fw-bold">Seguimiento y trazabilidad</h2>
+          <p class="card-text fs-5 pt-3" style="text-align: justify;">Como sabemos que ambas características sin ineherentes a un sitema de salud eficiente y puntual, mediante las herramientas mencionadas, ¡Están garantizadas!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--separator download-->
+  <div id="separator-download"> 
+    <div class="content pb-5"></div>
+  </div>
+
+  <!--button download-->
+  <div class="container-md">
+    <div class="row">
+      <p class="fs-5 font-weight-bolder text-center">¿Qué esperas?</p>
+    </div>
+    <div class="row pb-5">
+      <div class="col text-center">
+        <a href="https://drive.google.com/file/d/16rBJAZjHZd7nOZ_Xko257Xtf8HtTj9gK/view?usp=sharing" class="link-dark" target="_blank">
+          <boton class="btn btn-outline-primary btn-lg rounded-pill p-3 font-weight-bold fs-2" >¡Descarga nuestra app!</boton>
+        </a>
+      </div>      
+    </div>
+  </div>
+
+  <!--service-->
+  <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-4 col-sm-4" style="text-align: justify;">
+          <h2 class="ser-title">Otros Servicios</h2>
+          <hr class="botm-line">
+          <p>Prestamos múltiples servicios para que nuestros clientes, puedan resolver todas sus dudas, problemas, informarse más a detalle de nuestros procesos, calendarios, entre otras.</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-stethoscope"></i>
+            </div>
+            <div class="icon-info" style="text-align: justify;">
+              <h4>24 horas de soporte</h4>
+              <p>Por medio de nuestros correos electrónicos, números de teléfono, estaremos comunicándonos para cualquier duda o problema que se presente, siempre con la disposición para atender a nuestros usuarios.</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <hr class="botm-line">
+              <i class="fa fa-toolbox"></i>
+            </div>
+            <div class="icon-info" style="text-align: justify;">
+              <h4>Gestion de calidad</h4>
+              <p>Información de la organización disponible, para verificar que nuestros procesos son eficientes, además de cumplir a cabalidad los objetivos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+            <div class="icon-info" style="text-align: justify;">
+              <h4>Consultorías médicas</h4>
+              <p>A través de nuestra página se tiene información básica acerca de los diferentes pacientes, si es necesaria la solicitud de un reporte o de cualquier consultoría médica, servicios profesionales, asesorando de manera oportuna en materia de salud.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--separator detalles-->
+  <div id="separator-details"> 
+    <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col">
+          <div class="content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--cta-->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title">
+            <h2 class="head-title lg-line fw-bolder">Detalles <br>...</h2>
+            <hr class="botm-line">
+            <p class="sec-para">Los siguientes aspectos son importantes a tener en cuenta, en caso de requerir solventar alguna duda, respecto al funcionamiento de la plataforma</p>
+            <a href="/contactanos.html" style="color: #0cb8b6; padding-top:10px;">+ info</a>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>A tener en cuenta.</h3>
+                <p>Para comunicarse con nosotros acerca del funcionamiento de la plataforma, diríjase a la sección de información, donde estarán los correos y los números de teléfono a los cuales podrá contactarse con el fin de dar soporte técnico.</p>
+              </div>
+            </div>
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <hr class="botm-line">
+                <h3>It's something important you want to know.</h3>
+                <p>To communicate with us about the operation of the platform, go to the information section, where will be the emails and phone numbers that you can contact in order to provide technical support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer>
+        <!--Links-->
+
+        <div id="pie-pagina">
+          <div class="container-fluid py-5">
+            <div class="row justify-content-center pb-5">
+              <div class="col-sm-2 text-center"><a href="login.html" style="color: white;">Loguearse</a></div>
+              <div class="col-sm-2 text-center"><a href="contactanos.html" style="color: white;">Contáctanos</a></div>
+              <div class="col-sm-2 text-center"><a href="about.html" style="color: white;">Sobre nosotros</a></div>
+            </div>
+            
+            <div class="row justify-content-center pt-3">
+              <div class="col-2 text-center"><a href="#"></a>
+                <div class="service-info">
+                  <div class="social-icon-f">
+                    <a href="https://www.facebook.com/juancamilo.sanchezhincapie/"><i class="fab fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 text-center"><a href="#"></a>
+                <div class="service-info">
+                  <div class="social-icon-t">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 text-center"><a href="#"></a>
+                <div class="service-info">
+                  <div class="social-icon-i">
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-3">
+              <div class="col-md-12">
+                <div class="copy-right-text text-center fw-bold text-white">
+                  &copy; Copyright 2021, BioSolutions </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+</body>
+</html>
